@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 const songCards = document.querySelectorAll(".song-card");
 let currentSong = null;
 function Song() {
@@ -93,3 +94,4 @@ playbutton.addEventListener("click", function () {
   }
 });
 Song();
+});  
