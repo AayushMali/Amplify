@@ -1,0 +1,536 @@
+/* General styles */
+body {
+  background-color: hsl(0, 0%, 96%);
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: hsl(0, 0%, 96%);
+  height: 100vh;
+  width: 240px;
+  box-shadow: 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#logo button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: rgba(255, 187, 0, 0.788);
+  border-radius: 10px;
+}
+
+#logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: hsl(0, 0%, 30%);
+}
+
+.menu-sidebar,
+.general {
+  margin-bottom: 20px;
+}
+
+.menu-sidebar p,
+.general p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: hsl(39, 100%, 49%);
+}
+
+.menu-sidebar div,
+.general div {
+  margin-bottom: 10px;
+}
+
+.menu-sidebar button,
+.general button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.menu-sidebar button:hover,
+.general button:hover {
+  background-color: hsla(0, 0%, 0%, 0.092);
+  border-radius: 50px;
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+.menu-sidebar span:hover,
+.general span:hover {
+  color: hsl(44, 100%, 55%);
+}
+.menu-sidebar button:active,
+.general button:active {
+  background-color: hsl(0, 40%, 90%);
+}
+
+.menu-sidebar img,
+.general img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.menu-sidebar span,
+.general span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Hero section styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: -105vh;
+  width: 800px;
+  padding: 20px;
+  margin-left: 250px;
+  background-color: hsl(0, 0%, 99%);
+}
+
+.menu-name {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.menu-name p {
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.menu-name p:hover {
+  background-color: #ddd;
+  border-radius: 50px;
+  color: hsl(44, 100%, 55%);
+}
+
+.menu-name p:active {
+  color: hsl(38, 98%, 55%);
+}
+
+.search-input-btn {
+  display: flex;
+  align-items: center;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  justify-content: center;
+  margin-left: 130px;
+  height: 20px;
+}
+
+.search-input-btn input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search-input-btn button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.search-input-btn button img {
+  width: 24px;
+  height: 24px;
+}
+
+#hero1 {
+  margin-bottom: 20px;
+}
+#hero1 a:hover {
+  color: hsl(0, 0%, 50%);
+  cursor: pointer;
+}
+#hero1 #card1:hover,
+#card2:hover,
+#card3:hover,
+#card4:hover,
+#card5:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+#hero1 #card1:active,
+#card2:active,
+#card3:active,
+#card4:active,
+#card5:active {
+  color: (0, 0%, 99%);
+}
+#hero2 {
+  gap: 50px;
+}
+
+#hero1 h4,
+#hero2 h4 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+#hero1 div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#hero1 img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+#hero2 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  gap: 10px;
+  margin: 0px 50px;
+}
+#hero2 img:hover {
+  height: 105px;
+  width: 105px;
+  transition: 0.3s;
+}
+
+#hero2 span {
+  font-size: 16px;
+  color: #333;
+  margin-top: 19px;
+}
+#hero1 span,
+#hero1 p {
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+  margin: 0px 3px;
+}
+
+.artists-row1 {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.artists-row2 {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.artists-row3 {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.artists-row4 {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card-artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Music bar */
+#right-corner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: hsl(0, 0%, 96%);
+  width: 220px;
+  height: 200vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#right-corner p {
+  display: flex;
+  justify-content: center;
+}
+
+#right-corner .song-name {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#right-corner span {
+  display: flex;
+  justify-content: center;
+}
+
+#right-corner .playbar {
+  display: flex;
+  justify-content: center;
+}
+
+#right-corner .playbar button {
+  padding: 10px;
+  margin: 20px 10px;
+  border: none;
+  background: transparent;
+}
+
+#right-corner .playbar button:hover {
+  background-color: hsla(0, 0%, 0%, 0.092);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+#right-corner .Playlist p:hover {
+  cursor: pointer;
+  color: hsl(44, 100%, 55%);
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+#right-corner .Playlist p:active {
+  color: hsl(44, 100%, 77%);
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding: 10px;
+  margin-top: 45px;
+  background-color: hsl(44, 100%, 55%);
+  border-radius: 20px;
+  height: 19rem;
+}
+
+.Player-img {
+  width: 10vw;
+  height: 100px;
+  border-radius: 10px;
+}
+#add {
+  color: hsl(39, 100%, 49%);
+  display: flex;
+  align-items: center;
+}
+#add:hover,
+.playlist img:hover {
+  color: hsl(38, 98%, 55%);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+/* Media query */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+    height: 37vh;
+  }
+
+  .hero-section {
+    margin-left: 220px;
+    width: 70%;
+  }
+
+  .search-input-btn {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  #right-corner {
+    width: 200px;
+  }
+
+  .player .Player-img {
+    width: 8vw;
+    height: 80px;
+  }
+}
+/*smaller sizes*/
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Sidebar styles */
+  .sidebar {
+    width: 194px;
+  }
+
+  #logo img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #logo span {
+    font-size: 18px;
+  }
+
+  .menu-sidebar button,
+  .general button {
+    padding: 4px;
+  }
+
+  .menu-sidebar img,
+  .general img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .menu-sidebar span,
+  .general span {
+    font-size: 12px;
+  }
+
+  /* Hero section styles */
+  .hero-section {
+    margin-left: 43px;
+    width: calc(100% - 160px);
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  .menu-name {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-name p {
+    font-size: 12px;
+    margin: 3px 0;
+  }
+
+  .search-input-btn {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .search-input-btn input {
+    font-size: 12px;
+  }
+
+  .search-input-btn button img {
+    width: 16px;
+    height: 16px;
+  }
+
+  #hero1 img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #hero1 span {
+    font-size: 12px;
+  }
+
+  #hero2 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #hero2 span {
+    font-size: 12px;
+  }
+
+  .artists-row1,
+  .artists-row2,
+  .artists-row3,
+  .artists-row4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-artist img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-artist span {
+    font-size: 12px;
+  }
+
+  /* Right corner styles */
+  #right-corner {
+    height: 37vh;
+    width: 160px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: hsl(0, 0%, 96%);
+    box-shadow: 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .Playlist p {
+    font-size: 13px;
+    margin-top: -6px;
+  }
+  .player {
+    width: 100%;
+    padding: 3px;
+    background-color: hsl(44, 100%, 55%);
+    border-radius: 20px;
+    margin-top: 6px;
+    height: 53%;
+  }
+
+  .player .Player-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .player p,
+  .player span {
+    font-size: 12px;
+  }
+  .playbar {
+    margin-top: -15px;
+  }
+  .playbar button {
+    padding: 8px;
+  }
+}
